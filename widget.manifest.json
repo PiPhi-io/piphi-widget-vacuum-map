@@ -128,5 +128,57 @@
       "connect_src": []
     }
   },
-  "integrity": "sha256-cRyZ9CAYvCFYpQyEz6Bwi+5tfBiqWC/FFzHp6e/SZQw="
+  "integrity": "sha256-cRyZ9CAYvCFYpQyEz6Bwi+5tfBiqWC/FFzHp6e/SZQw=",
+  "marketplace": {
+    "metadata_version": 2,
+    "display_name": "Vacuum map",
+    "summary": "View a robot vacuum map, route, rooms, battery, state, and allow-listed controls.",
+    "category": "appliances",
+    "regions": [
+      "WW"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "ar"
+    ],
+    "publisher": {
+      "name": "PiPhi Network",
+      "website_url": "https://piphi.io",
+      "support_url": "https://github.com/PiPhi-io/piphi-widget-vacuum-map/issues",
+      "security_contact": "support@piphi.io"
+    },
+    "access": [
+      {
+        "id": "vacuum_control",
+        "label": "Vacuum controls",
+        "reason": "Runs only the start, pause, return-home, locate, and selected-room commands exposed by the bound vacuum.",
+        "required": false
+      }
+    ],
+    "compatibility": [
+      {
+        "capability": "vacuum_map",
+        "host_protocol": "piphi.widget.host/1",
+        "widget_sdk": ">=0.4.0"
+      }
+    ],
+    "documentation_url": "https://github.com/PiPhi-io/piphi-widget-vacuum-map",
+    "support_url": "https://github.com/PiPhi-io/piphi-widget-vacuum-map/issues",
+    "changelog_url": "https://github.com/PiPhi-io/piphi-widget-vacuum-map/releases",
+    "quality_tier": "unrated",
+    "governance": {
+      "schema_version": 1,
+      "publication_status": "draft",
+      "rollout_percent": 0,
+      "lifecycle_status": "active",
+      "qualification": {
+        "status": "unverified"
+      }
+    }
+  },
+  "artifact": {
+    "release_asset": "piphi-widget-vacuum-map-0.1.0.tgz",
+    "integrity": null
+  }
 }
